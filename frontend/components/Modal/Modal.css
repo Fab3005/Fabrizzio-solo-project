@@ -1,0 +1,52 @@
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: 191414;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-content {
+    width: 500px;
+    background-color: rgb(230, 228, 228);
+    border-radius: 30px;
+}
+.modal.title {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.margin-body {
+    padding: 10px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.loginbutton {
+    width: 200px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background: #ffffff;
+    color: rgb(16, 15, 15);
+    font-size: 22px;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.logintext{
+    padding: 10px;
+    border: 2px solid #eee;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    border-radius:10px;
+    margin-right: 20px;
+}
