@@ -42,7 +42,7 @@ module.exports = {
           publicPath: 'bundle.js',
         },
         proxy: {//why does is start with 'api' here?
-          '/api/**': 'http://localhost:3000',
+          '/api/**': 'http://localhost:3001',
         },
       
     }
