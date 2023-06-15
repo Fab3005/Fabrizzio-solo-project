@@ -10,7 +10,6 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: './frontend/index.html',
-
         })
     ],
     module: {
@@ -31,9 +30,13 @@ module.exports = {
                 use: ['style-loader', 'css-loader', 'sass-loader'],
             },
             {
-                test: /\.svg$/,
-                use: ['file-loader'],
-            }
+                test: /\.(png|jpe?g|gif|svg)$/i,
+                use: [
+                  {
+                    loader: ['file-loader']
+                  },
+                ],
+              },
         ]
     },
     devServer: {
@@ -41,7 +44,7 @@ module.exports = {
           directory: path.resolve(__dirname, 'client/components/public'),
           publicPath: 'bundle.js',
         },
-        proxy: {//why does is start with 'api' here?
+        proxy: {
           '/api/**': 'http://localhost:3001',
         },
       
